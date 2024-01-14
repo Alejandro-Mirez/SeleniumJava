@@ -1,0 +1,167 @@
+TEST SUITE FOR STANDARD USER
+
+//TODO: create correct documentation (test suite, test report - Test Result Summary - already got it)
+//TODO: learn about packages
+
+TEST CASE 1: log in with correct data
+    name of the test function: loginTC1
+    type of test case: positive
+    test techniques: blackbox, exploratory testing
+    test type: functional
+    preconditions:
+        - latest version of Chrome web browser
+        - Windows 10 OS
+        - network access
+    importance: high
+    execution type: automatic (Selenium WebDriver, Java)
+    objective: check whether a user can log in with correct data
+    expected result: user can log in with correct username and password
+    actual result:
+    passed:
+    test object: https://www.saucedemo.com/
+
+
+TEST CASE 1A: log out
+    name of the test function: logoutTC1A
+    type of test case: positive
+    test techniques: blackbox, exploratory testing
+    test type: functional
+    preconditions:
+        - latest version of Chrome web browser
+        - Windows 10 OS
+        - network access
+        - logged user
+    importance: high
+    execution type: automatic (Selenium WebDriver, Java)
+    objective: check whether a logged user can log out
+    expected result: logged user can log out
+    actual result:
+    passed:
+    test object: https://www.saucedemo.com/inventory.html
+
+
+TEST CASE 2: log in without username
+    name of the test function: loginTC2
+    type of test case: negative
+    test techniques: blackbox, exploratory testing
+    test type: functional
+    preconditions:
+        - latest version of Chrome web browser
+        - Windows 10 OS
+        - network access
+    importance: high
+    execution type: automatic
+    objective: check if a user can log in without username, but with correct password
+    expected result: user can't log in without providing username, some alert is shown
+    actual result:
+    passed:
+    test object: https://www.saucedemo.com/
+
+
+TEST CASE 3: log in without password
+    name of the test function: loginTC3
+    type of test case: negative
+    test techniques: blackbox, exploratory testing
+    test type: functional
+    preconditions:
+        - latest version of Chrome web browser
+        - Windows 10 OS
+        - network access
+    importance: high
+    execution type: automatic
+    objective: check if a user can log in with correct username, but no password
+    expected result: user can't log in without providing password, some alert is shown
+    actual result:
+    passed:
+    test object: https://www.saucedemo.com/
+
+
+TEST CASE 4: log in with no data
+    name of the test function: loginTC4
+    type of test case: negative
+    test techniques: blackbox, exploratory testing
+    test type: functional
+    preconditions:
+        - latest version of Chrome web browser
+        - Windows 10 OS
+        - network access
+    importance: high
+    execution type: automatic
+    objective: check if a user can log in without username and password
+    expected result: user can't log in without providing username and password, some alert is shown
+    actual result:
+    passed:
+    test object: https://www.saucedemo.com/
+
+
+TEST CASE 5: log in with correct username and incorrect password
+    name of the test function: loginTC5
+    type of test case: negative
+    test techniques: blackbox, exploratory testing
+    test type: functional
+    preconditions:
+        - latest version of Chrome web browser
+        - Windows 10 OS
+        - network access
+    importance: high
+    execution type: automatic
+    objective: check if a user can log in with correct username and incorrect password
+    expected result: user can't log in with correct username and incorrect password, some alert is shown
+    actual result:
+    passed:
+    test object: https://www.saucedemo.com/
+
+
+TEST CASE 6: log in with incorrect username and correct password
+    name of the test function: loginTC6
+    type of test case: negative
+    test techniques: blackbox, exploratory testing
+    test type: functional
+    preconditions:
+        - latest version of Chrome web browser
+        - Windows 10 OS
+        - network access
+    importance: high
+    execution type: automatic
+    objective: check if a user can log in with incorrect username and correct password
+    expected result: user can't log in with incorrect username and correct password, some alert is shown
+    actual result:
+    passed:
+    test object: https://www.saucedemo.com/
+
+
+TEST CASE 7: log in with incorrect username and password
+    name of the test function: loginTC7
+    type of test case: negative
+    test techniques: blackbox, exploratory testing
+    test type: functional
+    preconditions:
+        - latest version of Chrome web browser
+        - Windows 10 OS
+        - network access
+    importance: high
+    execution type: automatic
+    objective: check if a user can log in with incorrect username and password
+    expected result: user can't log in with incorrect username and password, some alert is shown
+    actual result:
+    passed:
+    test object: https://www.saucedemo.com/
+
+
+TEST CASE 8: access page shown after logging in from url
+    name of the test function: accessTC8
+    type of test case: negative
+    test techniques: blackbox, exploratory testing
+    test type: functional
+    preconditions:
+        - latest version of Chrome web browser
+        - Windows 10 OS
+        - network access
+        - knowledge of the url of the page shown after logging in
+    importance: high
+    execution type: automatic
+    objective: check if we can skip logging in by typing url of the page we're redirected to after logging in
+    expected result: access should be denied; user should be redirected to logging page
+    actual result:
+    passed:
+    test object: https://www.saucedemo.com/inventory.html
